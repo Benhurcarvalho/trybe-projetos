@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: rgb(253, 251, 251);
+        font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#cabecalho {
+    top: 0;
+    background-color: #036b53e3;
+    padding: 30px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 0 25px 0;
+}
+
+#titulo {
+    color: rgb(253, 251, 251);
+}
+
+#minha_foto {
+    width: 300px;
+    padding: 102px 5px 5px 5px;
+    border-radius: 15px;
+}
+
+.ancora {
+    top: 397px; 
+    padding: 5px 5px; 
+    text-decoration: none;
+    color: black;
+}
+
+.licoes {
+    top: 425px;
+    padding: 10px 5px;
+}
+
+.listas {
+    top: 460px;
+    width: 60%;
+    margin: auto;
+    text-align:left;
+    padding: 70px;
+    display: inline-flex;   
+}
+
+.texto {
+    top: 860px;
+    width: 100%;
+    margin: auto;
+    text-align:left;
+    padding: 70px;
+    display: inline-flex;  
+}
+
+article {
+    width: 45%;
+    color: black;
+    font-size: 20px;
+    line-height: 1;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+}
+
+aside {
+    width: 45%;
+    color: rgba(0, 0, 0, 0.74);
+    font-size: 20px;
+    line-height: 1;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+}
+
+#rodape {
+    top: 1050px;
+}
