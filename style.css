@@ -2,6 +2,10 @@
     margin: 0;
 }
 
+html {
+    width: 100%;
+}
+
 body {
     background-color: rgba(253, 251, 251, 0.795);
     font-family: 'Montserrat Alternates', sans-serif;
@@ -14,7 +18,7 @@ body {
     padding: 30px;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
     box-shadow: 0 0 25px 0;
     display: inline-flex;
 }
@@ -27,6 +31,9 @@ body {
 .iconH1:hover{
     cursor: pointer;
     box-shadow: 0 0 25px rgb(37, 56, 33);
+    transition: 300ms;
+}
+.iconH1:hover::after{
     transition: 300ms;
 }
 
@@ -54,6 +61,47 @@ body {
     top: 425px;
     padding: 10px 5px;
 }
+
+
+.button {
+    background: #fff; 
+    color: #036b53e3;    
+    border: 2px solid #036b53e3; 
+    padding: 16px 80px;
+    border-radius: 5px; 
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    margin: 5px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .button:hover {
+    color: #fff; 
+  }
+  .button::after {
+    content: "";
+    background: #036b53e3; 
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+  .button:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
 
 .listas {
     top: 460px;
@@ -92,5 +140,10 @@ aside {
 }
 
 #rodape {
-    top: 1050px;
+    background-color: #036b53e3;
+    width: 120%;
+    color:  rgb(253, 251, 251);
+    font-size: 20px;
+    padding: 10px 5px;
+    font-weight: 600;
 }
